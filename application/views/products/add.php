@@ -16,7 +16,7 @@
           <?php echo form_open('product/add',array('name'=>'prod_form','id'=>'prod_form')); ?>
           <div class="col-md-10">
               <div class="form-group">
-                  <label>Product Name : </label>
+                  <label>Product Name <span class="error">*</span> : </label>
                   <input class="form-control" name="prod_name" id="prod_name" placeholder="Enter product name" value="<?php echo set_value('prod_name');?>">
                   <?php echo form_error('prod_name'); ?>
               </div>
@@ -26,12 +26,12 @@
                   <?php echo form_error('prod_description'); ?>
               </div>
               <div class="form-group">
-                  <label>Product Price : </label>
+                  <label>Product Price <span class="error">*</span> : </label>
                   <input class="form-control" name="prod_price" id="prod_price" placeholder="Enter product price" value="<?php echo set_value('prod_price');?>">
                   <?php echo form_error('prod_price'); ?>
               </div>
               <div class="form-group">
-                  <label>Product Quantity : </label>
+                  <label>Product Quantity <span class="error">*</span> : </label>
                   <input class="form-control" name="prod_qty" id="prod_qty" placeholder="Enter product quantity"value="<?php echo set_value('prod_qty');?>">
                   <?php echo form_error('prod_qty'); ?>
               </div>
